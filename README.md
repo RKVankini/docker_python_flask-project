@@ -30,7 +30,7 @@ Dockerfile
 FROM python:3.6
 
 # Set the maintainer label
-MAINTAINER veera "veera.narni232@gmail.com"
+MAINTAINER Rama Krishna "ramakrishnavankini23@gmail.com"
 
 # Copy the current directory contents into the /app directory in the container
 COPY . /app
