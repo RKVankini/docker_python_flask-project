@@ -1,106 +1,82 @@
-# Simple Python Flask Dockerized Application
+# Dockerized Python Flask Application
 
-This repository contains a simple Python Flask application that is Dockerized for easy setup and deployment.
+A simple Python Flask web application containerized using Docker.
+This project demonstrates how to build, package, and run a Flask application inside a Docker container.
 
-This is my customized version of a basic Flask + Docker project, created for learning and practicing Docker, containerization, and DevOps fundamentals.
+## Project Overview
 
-## Build the Docker Image
+This repository contains a lightweight Flask application that is:
+- Written in Python
+- Containerized using Docker
+- Portable and easy to deploy on any Docker-enabled system
 
-Build the Docker image using the following command:
+This project is intended for learning Docker fundamentals and basic DevOps workflows.
 
-```bash
+## Technologies Used
+
+- Python 3
+- Flask
+- Docker
+- Git & GitHub
+
+## Project Structure
+
+.
+├── app.py
+├── requirements.txt
+├── Dockerfile
+├── README.md
+
+## Prerequisites
+
+Ensure the following tools are installed on your system:
+- Docker
+- Git
+
+## How to Run the Application
+
+1. Clone the repository
+
+git clone https://github.com/YOUR_USERNAME/docker-python-flask-app.git
+cd docker-python-flask-app
+
+2. Build the Docker image
+
 docker build -t simple-flask-app:latest .
-Run the Docker Container
-Run the Docker container using the command shown below:
+
+3. Run the Docker container
+
 docker run -d -p 5000:5000 simple-flask-app
 
-Access the Application
+## Access the Application
 
-The application will be accessible at:
+Open a web browser and navigate to:
+
 http://127.0.0.1:5000
 
-If you are using boot2docker, first find the IP address using:
-docker run -d -p 5000:5000 simple-flask-app
+If Docker is running inside a virtual machine, use the VM IP address:
 
-Then access the application using:
-http://<host_ip>:5000
+http://<VM_IP>:5000
 
-Dockerfile
-# Use the official Python 3.6 image from Docker Hub
-FROM python:3.6
+## Learning Outcomes
 
-# Set the maintainer label
-MAINTAINER Rama Krishna "ramakrishnavankini23@gmail.com"
+- Understanding Dockerfile structure
+- Building Docker images
+- Running containers for Python applications
+- Exposing container ports to host systems
 
-# Copy the current directory contents into the /app directory in the container
-COPY . /app
+## Future Enhancements
 
-# Set the working directory to /app
-WORKDIR /app
+- Production deployment using Gunicorn
+- Reverse proxy using Nginx
+- CI/CD pipeline using GitHub Actions
+- Cloud deployment on AWS
 
-# Install any needed packages specified in requirements.txt
-RUN pip install -r requirements.txt
+## Author
 
-# Set the entry point to python
-ENTRYPOINT ["python"]
+Rama Krishna Vankini  
+AWS | Docker | DevOps Enthusiast
 
-# Run app.py when the container launches
-CMD ["app.py"]
+## License
 
-
-Project Purpose
-
-This project demonstrates how to Dockerize a Python Flask application and run it inside a Docker container.
-
-Technologies Used
-
-Python
-
-Flask
-
-Docker
-
-Author
-
-Rama Krishna Vankini
-AWS | Docker | DevOps Learner
-
-
-
-<!-- # Simple Python Flask Dockerized Application#
-
-Build the image using the following command
-
-```bash
-$ docker build -t simple-flask-app:latest .
-```
-
-Run the Docker container using the command shown below.
-
-```bash
-$ docker run -d -p 5000:5000 simple-flask-app
-```
-
-The application will be accessible at http:127.0.0.1:5000 or if you are using boot2docker then first find ip address using `$ boot2docker ip` and the use the ip `http://<host_ip>:5000`
-
-
-# Use the official Python 3.6 image from the Docker Hub
-FROM python:3.6
-
-# Set the maintainer label
-MAINTAINER veera "veera.narni232@gmail.com"
-
-# Copy the current directory contents into the /app directory in the container
-COPY . /app
-
-# Set the working directory to /app
-WORKDIR /app
-
-# Install any needed packages specified in requirements.txt
-RUN pip install -r requirements.txt
-
-# Set the entry point to python
-ENTRYPOINT ["python"]
-
-# Run app.py when the container launches
-CMD ["app.py"] -->
+This project is open for learning and educational purposes.
