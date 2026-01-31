@@ -21,11 +21,11 @@ This project is intended for learning Docker fundamentals and basic DevOps workf
 
 ## Project Structure
 
-#.
-#├── app.py
-#├── requirements.txt
-#├── Dockerfile
-#├── README.md
+.
+├── app.py
+├── requirements.txt
+├── Dockerfile
+├── README.md
 
 ## Prerequisites
 
