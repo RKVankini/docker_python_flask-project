@@ -21,11 +21,11 @@ This project is intended for learning Docker fundamentals and basic DevOps workf
 
 ## Project Structure
 
-.
-├── app.py
-├── requirements.txt
-├── Dockerfile
-├── README.md
+#.
+#├── app.py
+#├── requirements.txt
+#├── Dockerfile
+#├── README.md
 
 ## Prerequisites
 
@@ -37,7 +37,7 @@ Ensure the following tools are installed on your system:
 
 1. Clone the repository
 
-git clone https://github.com/YOUR_USERNAME/docker-python-flask-app.git
+git clone https://github.com/RKVankini/docker-python-flask-app.git
 cd docker-python-flask-app
 
 2. Build the Docker image
